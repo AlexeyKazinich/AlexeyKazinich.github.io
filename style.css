@@ -1,0 +1,13 @@
+:root{
+    --clr-light-orange: #F6D4B1;
+    --clr-light-gray: #5E5C59;
+    --clr-dark-gray: #525252;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    scroll-behavior: smooth;
+    background: var(--clr-light-orange);
+    background: linear-gradient(to right, var(--clr-light-orange),var(--clr-light-gray));
+}
