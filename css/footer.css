@@ -3,7 +3,7 @@
 .footer
 {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-light-gray);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -53,7 +53,7 @@
 {
     display: inline-block;
     vertical-align: middle;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-dark-gray);
     animation: blink .75s step-end infinite;
     content: '.';
     color: transparent;
@@ -71,6 +71,6 @@
     }
 
     50%{
-        background-color: var(--clr-dark);
+        background-color: var(--clr-dark-gray);
     }
 }
