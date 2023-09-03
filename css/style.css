@@ -1,0 +1,67 @@
+@import url(properties.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 800px)
+{
+    :root
+    {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+body{
+    background: var(--clr-light-orange);
+    color:var(--clr-dark-gray);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+strong{
+    font-weight: var(--fw-bold);
+}
+
+:focus{
+    outline: 3px solid var(--clr-light-gray);
+    outline-offset: 3px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo 
+{
+    max-width: 100px;
+}
+
+
+
+

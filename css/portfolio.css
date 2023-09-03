@@ -1,0 +1,78 @@
+@import url(properties.css);
+/* My projects */
+.my-projects
+{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__subtitle--my-projects
+{
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.portfolio
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.portfolio__item {
+    background: var(--clr-dark-gray);
+    overflow: hidden;
+    border: solid;
+    border-color: #fff;
+    border-width: 1px;
+
+}
+
+.portfolio__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .05;
+}
+
+.portfolio__item:hover .portfolio__img__text
+{
+    z-index: 50;
+    visibility: visible;
+    
+}
+
+.portfolio__img__text
+{
+    font-size: var(--fs-body);
+    position: absolute;
+    background: transparent;
+    color: var(--clr-accent);
+    visibility: hidden;
+    z-index: -1;
+    max-width: 20rem;
+
+    transition: opacity 250ms, visibility 250ms;
+
+    
+
+}
+
+.portfolio__img__text__title
+{
+    visibility: visible;
+    transform: translateX(350%);
+
+    margin-top: -5px;
+}

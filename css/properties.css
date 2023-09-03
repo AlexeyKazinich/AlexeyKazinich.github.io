@@ -1,0 +1,22 @@
+/*custom properties */
+:root{
+
+    --ff-primary:'Source Sans Pro', sans-serif;
+    --ff-secondary:'Source Sans Pro', monospace;
+
+    --clr-light-orange: #F6D4B1;
+    --clr-light-gray: #5E5C59;
+    --clr-dark-gray: #525252;
+
+    --fs-h1: 3rem;
+    --fs-h3: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --fs-navlink: 1.75rem;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --boxShadow: 0.25em 0.25em 0.75em rgb(0,0,0,.25),
+    0.125em 0.125em 0.25em rgb(0,0,0,.15);
+}

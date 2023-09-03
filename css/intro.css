@@ -1,0 +1,68 @@
+@import url(properties.css);
+/* intro section */
+.intro{
+    position: relative;
+    text-align: center;
+}
+
+.intro__img{
+    box-shadow: var(--boxShadow);
+}
+
+.section__subtitle--intro{
+    display: inline-block;
+}
+
+.section__title--aboutme
+{
+    font-size: var(--fs-h2);
+    color: var(--clr-light-gray);
+    position: relative;
+}
+
+.section__title--aboutme::after
+{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.25;
+}
+
+.about-me-text
+{
+    margin-bottom: 4em;
+}
+
+.about-me
+{
+    background-color: var(--clr-dark);
+    background-image: url(../img/raccoonMain.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.about-me-text-paragraph
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width:800px)
+{
+    .about-me-text
+    {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-me-text-paragraph + .about-me-text-paragraph
+    {
+        margin-left: 2em;
+    }
+}
